@@ -1,39 +1,84 @@
-🧼 FLUSHDNS - Limpeza de DNS e Renovação de IP
-Este é um script em batch (.bat) simples e eficaz para limpar o cache DNS e renovar automaticamente o endereço IP da sua máquina com Windows. Ideal para resolver problemas comuns de conexão, como:
+# 🧼 DNS Cleaner
 
-Navegação lenta ou instável
+Script de manutenção de rede para **Windows**, desenvolvido em Batch (`.bat`) para auxiliar na correção de problemas comuns de conectividade.
 
-Sites que não carregam corretamente
+O **DNS Cleaner** executa automaticamente uma sequência de comandos de diagnóstico e renovação das configurações de rede, evitando a necessidade de executar cada comando manualmente pelo Prompt de Comando.
 
-Conflitos de IP na rede
+## 🚀 Funcionalidades
 
-Falha ao resolver nomes de domínio
+O script realiza as seguintes operações:
 
-🔧 O que o script faz?
-Limpa o cache DNS local (ipconfig /flushdns)
+* 🧹 Limpeza do cache DNS
+* 🔄 Liberação do endereço IP atual
+* 🌐 Renovação do endereço IP
+* 🔧 Reinicialização do Winsock
+* ⚙️ Redefinição da pilha TCP/IP
+* 🔄 Atualização dos registros DNS
+* 📡 Renovação dos registros NetBIOS
 
-Renova o endereço IP da máquina (ipconfig /release + ipconfig /renew)
+### Comandos utilizados
 
-Reinicia o Winsock (netsh winsock reset)
+```text
+ipconfig /flushdns
+ipconfig /release
+ipconfig /renew
+netsh winsock reset
+netsh int ip reset
+nbtstat -rr
+```
 
-Reinicia as configurações de IP (netsh int ip reset)
+## 🎯 Para que serve?
 
-Atualiza o DNS registrado
+O script pode ajudar em situações como:
 
-Remove e renova registros NetBIOS (nbtstat -rr)
+* Sites que não carregam corretamente
+* Problemas de resolução de nomes
+* Conexão instável
+* Problemas após alteração de rede
+* Conflitos ou renovação de endereço IP
+* Problemas relacionados ao cache DNS
+* Falhas temporárias na comunicação de rede
 
-▶️ Como usar
-Baixe o arquivo flushdns.bat
+## 💻 Requisitos
 
-Clique com o botão direito e selecione Executar como administrador
+* Windows 7 ou superior
+* Permissão de administrador
+* Conexão de rede ativa para realizar a renovação do IP
 
-Siga as instruções na tela
+## ▶️ Como utilizar
 
-⚠️ Requisitos
-Sistema operacional: Windows 7, 8, 10 ou 11
+1. Baixe o arquivo `FLUSH-DNS.bat`.
+2. Clique com o botão direito sobre o arquivo.
+3. Selecione **Executar como administrador**.
+4. Aguarde a execução dos procedimentos.
+5. Reinicie o computador caso o script solicite ou caso o problema persista.
 
-Permissão de administrador para aplicar as mudanças
+> ⚠️ Algumas operações exigem privilégios administrativos para serem executadas corretamente.
 
-💡 Observação
-Este script é útil para quem está enfrentando problemas de conectividade com a internet em redes domésticas, escolares ou corporativas. Ele não altera configurações avançadas nem faz modificações permanentes no sistema.
+## 🛠️ Tecnologia
 
+* **Batch Script (.BAT)**
+* **Windows CMD**
+* **IPConfig**
+* **Netsh**
+* **NBTStat**
+
+## 📌 Observações
+
+Este projeto foi desenvolvido como uma ferramenta simples para auxiliar na manutenção e diagnóstico de conexões de rede no Windows.
+
+O script não substitui ferramentas profissionais de diagnóstico e não garante a correção de todos os problemas de conectividade.
+
+## 📄 Licença
+
+Este projeto está disponível para estudo e utilização conforme os termos definidos no repositório.
+
+## 👨‍💻 Autor
+
+**Rc692**
+
+Projeto desenvolvido para facilitar tarefas comuns de manutenção de rede no Windows.
+
+---
+
+⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
