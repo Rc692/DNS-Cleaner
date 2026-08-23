@@ -164,4 +164,8 @@ Desenvolvido como uma ferramenta simples para manutenção e diagnóstico de red
 
 ## 📄 License
 
+## 📄 License / Licença
+
 This project is licensed under the [MIT License](LICENSE).
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
