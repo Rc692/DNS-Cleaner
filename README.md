@@ -1,48 +1,32 @@
 # 🧼 DNS Cleaner
 
-A simple Windows network maintenance tool designed to help troubleshoot common network connectivity and DNS-related issues.
+A simple Windows network maintenance tool designed to help troubleshoot
+common DNS and connectivity issues.
+
+This project was developed and maintained during my free time as a
+practical utility for Windows network maintenance.
 
 ## 🚀 Features
 
-DNS Cleaner performs several network maintenance operations:
+- 🧹 Flush DNS cache
+- 🔄 Release IP address
+- 🌐 Renew IP address
+- 🔧 Reset Winsock
+- ⚙️ Reset TCP/IP
+- 📡 Refresh NetBIOS
 
-* 🧹 Flush DNS cache
-* 🔄 Release the current IP address
-* 🌐 Renew the IP address
-* 🔧 Reset Winsock
-* ⚙️ Reset the TCP/IP stack
-* 📡 Refresh NetBIOS name registrations
+## 🛠️ Technologies
 
-## 🛠️ Commands
-
-The script uses standard Windows networking commands:
-
-```bat
-ipconfig /flushdns
-ipconfig /registerdns
-ipconfig /release
-ipconfig /renew
-netsh winsock reset
-netsh int ip reset
-nbtstat -rr
-```
+- Windows Batch Script
+- Windows Command Prompt
+- IPConfig
+- Netsh
+- NBTStat
 
 ## 🎯 Purpose
 
-DNS Cleaner can be useful when experiencing:
-
-* DNS resolution problems
-* Websites not loading correctly
-* Network connectivity issues
-* IP address conflicts
-* Connection problems after changing networks
-* Temporary network configuration issues
-
-## 💻 Requirements
-
-* Windows 7 or later
-* Administrator privileges
-* An active network connection for IP renewal
+A lightweight utility created to simplify common Windows network
+maintenance and troubleshooting tasks.
 
 ## ▶️ Usage
 
@@ -50,83 +34,59 @@ DNS Cleaner can be useful when experiencing:
 2. Right-click the file.
 3. Select **Run as administrator**.
 4. Follow the instructions displayed by the script.
-5. Restart Windows if requested.
 
-> ⚠️ Administrator privileges are required for some operations.
+> ⚠️ Some operations require administrator privileges.
 
-## 🔧 Technology
+## ⚠️ Disclaimer
 
-* Windows Batch Script
-* Windows Command Prompt
-* IPConfig
-* Netsh
-* NBTStat
+This tool is provided as a practical utility and may not solve every
+network or connectivity problem.
 
-## 📌 Notes
-
-DNS Cleaner is a lightweight utility designed to simplify common Windows network maintenance tasks.
-
-It does not guarantee that every network or connectivity problem will be resolved.
+The project may receive improvements and new features over time.
 
 ## 👨‍💻 Author
 
 **Rc692**
 
-Developed as a simple tool for Windows network maintenance and troubleshooting.
+Developed during my free time as a practical Windows network utility.
 
 ---
 
-⭐ If you find this project useful, consider giving it a star.
+⭐ If you find this project useful, feel free to give it a star.
 
 ---
 
 # 🇧🇷 Português
 
-## 🧼 DNS Cleaner
+# 🧼 DNS Cleaner
 
-Uma ferramenta simples de manutenção de rede para Windows, desenvolvida para auxiliar no diagnóstico e na solução de problemas comuns de conectividade e DNS.
+Uma ferramenta simples de manutenção de rede para Windows, desenvolvida
+para auxiliar no diagnóstico de problemas comuns de DNS e conectividade.
+
+Este projeto foi desenvolvido e mantido nas minhas horas livres como uma
+ferramenta prática para manutenção de redes no Windows.
 
 ## 🚀 Funcionalidades
 
-O DNS Cleaner realiza diversas operações de manutenção de rede:
+- 🧹 Limpeza do cache DNS
+- 🔄 Liberação do endereço IP
+- 🌐 Renovação do endereço IP
+- 🔧 Redefinição do Winsock
+- ⚙️ Redefinição do TCP/IP
+- 📡 Atualização do NetBIOS
 
-* 🧹 Limpeza do cache DNS
-* 🔄 Liberação do endereço IP atual
-* 🌐 Renovação do endereço IP
-* 🔧 Redefinição do Winsock
-* ⚙️ Redefinição da pilha TCP/IP
-* 📡 Atualização dos registros NetBIOS
+## 🛠️ Tecnologias
 
-## 🛠️ Comandos
-
-O script utiliza comandos padrão de rede do Windows:
-
-```bat
-ipconfig /flushdns
-ipconfig /registerdns
-ipconfig /release
-ipconfig /renew
-netsh winsock reset
-netsh int ip reset
-nbtstat -rr
-```
+- Windows Batch Script
+- Windows Command Prompt
+- IPConfig
+- Netsh
+- NBTStat
 
 ## 🎯 Objetivo
 
-O DNS Cleaner pode ser útil em situações como:
-
-* Problemas de resolução DNS
-* Sites que não carregam corretamente
-* Problemas de conectividade
-* Conflitos de endereço IP
-* Problemas após trocar de rede
-* Problemas temporários na configuração de rede
-
-## 💻 Requisitos
-
-* Windows 7 ou superior
-* Privilégios de administrador
-* Conexão de rede ativa para renovação do IP
+Uma ferramenta leve criada para facilitar tarefas comuns de manutenção e
+diagnóstico de rede no Windows.
 
 ## ▶️ Como utilizar
 
@@ -134,35 +94,30 @@ O DNS Cleaner pode ser útil em situações como:
 2. Clique com o botão direito no arquivo.
 3. Selecione **Executar como administrador**.
 4. Siga as instruções apresentadas pelo script.
-5. Reinicie o Windows caso seja solicitado.
 
 > ⚠️ Algumas operações exigem privilégios de administrador.
 
-## 🔧 Tecnologias
+## ⚠️ Observação
 
-* Windows Batch Script
-* Windows Command Prompt
-* IPConfig
-* Netsh
-* NBTStat
+Esta ferramenta é disponibilizada como um utilitário prático e não
+garante a solução de todos os problemas de rede ou conectividade.
 
-## 📌 Observações
-
-O DNS Cleaner é uma ferramenta leve desenvolvida para simplificar tarefas comuns de manutenção de rede no Windows.
-
-A ferramenta não garante a solução de todos os problemas de conectividade ou rede.
+O projeto poderá receber melhorias e novas funcionalidades ao longo do
+tempo.
 
 ## 👨‍💻 Autor
 
 **Rc692**
 
-Desenvolvido como uma ferramenta simples para manutenção e diagnóstico de redes no Windows.
+Desenvolvido nas minhas horas livres como uma ferramenta prática para
+manutenção de redes no Windows.
 
 ---
 
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
+⭐ Se este projeto foi útil para você, fique à vontade para deixar uma
+estrela no repositório.
 
-## 📄 License
+---
 
 ## 📄 License / Licença
 
