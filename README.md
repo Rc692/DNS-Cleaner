@@ -1,24 +1,23 @@
 # 🧼 DNS Cleaner
 
-Script de manutenção de rede para **Windows**, desenvolvido em Batch (`.bat`) para auxiliar na correção de problemas comuns de conectividade.
+A simple Windows network maintenance tool designed to help troubleshoot common network connectivity and DNS-related issues.
 
-O **DNS Cleaner** executa automaticamente uma sequência de comandos de diagnóstico e renovação das configurações de rede, evitando a necessidade de executar cada comando manualmente pelo Prompt de Comando.
+## 🚀 Features
 
-## 🚀 Funcionalidades
+DNS Cleaner performs several network maintenance operations automatically:
 
-O script realiza as seguintes operações:
+* 🧹 Flush DNS cache
+* 🔄 Release the current IP address
+* 🌐 Renew the IP address
+* 🔧 Reset Winsock
+* ⚙️ Reset the TCP/IP stack
+* 📡 Refresh NetBIOS name registrations
 
-* 🧹 Limpeza do cache DNS
-* 🔄 Liberação do endereço IP atual
-* 🌐 Renovação do endereço IP
-* 🔧 Reinicialização do Winsock
-* ⚙️ Redefinição da pilha TCP/IP
-* 🔄 Atualização dos registros DNS
-* 📡 Renovação dos registros NetBIOS
+## 🛠️ Commands
 
-### Comandos utilizados
+The script uses standard Windows networking commands:
 
-```text
+```bat
 ipconfig /flushdns
 ipconfig /release
 ipconfig /renew
@@ -27,58 +26,53 @@ netsh int ip reset
 nbtstat -rr
 ```
 
-## 🎯 Para que serve?
+## 🎯 Purpose
 
-O script pode ajudar em situações como:
+DNS Cleaner can be useful when experiencing:
 
-* Sites que não carregam corretamente
-* Problemas de resolução de nomes
-* Conexão instável
-* Problemas após alteração de rede
-* Conflitos ou renovação de endereço IP
-* Problemas relacionados ao cache DNS
-* Falhas temporárias na comunicação de rede
+* DNS resolution problems
+* Websites not loading correctly
+* Network connectivity issues
+* IP address conflicts
+* Connection problems after changing networks
+* Temporary network configuration issues
 
-## 💻 Requisitos
+## 💻 Requirements
 
-* Windows 7 ou superior
-* Permissão de administrador
-* Conexão de rede ativa para realizar a renovação do IP
+* Windows 7 or later
+* Administrator privileges
+* An active network connection for IP renewal
 
-## ▶️ Como utilizar
+## ▶️ Usage
 
-1. Baixe o arquivo `FLUSH-DNS.bat`.
-2. Clique com o botão direito sobre o arquivo.
-3. Selecione **Executar como administrador**.
-4. Aguarde a execução dos procedimentos.
-5. Reinicie o computador caso o script solicite ou caso o problema persista.
+1. Download the latest version of **DNS Cleaner**.
+2. Right-click the `.bat` file.
+3. Select **Run as administrator**.
+4. Wait for the commands to finish.
+5. Restart Windows if requested or if network problems persist.
 
-> ⚠️ Algumas operações exigem privilégios administrativos para serem executadas corretamente.
+> ⚠️ Administrator privileges are required for some operations.
 
-## 🛠️ Tecnologia
+## 🔧 Technology
 
-* **Batch Script (.BAT)**
-* **Windows CMD**
-* **IPConfig**
-* **Netsh**
-* **NBTStat**
+* Windows Batch Script
+* Windows Command Prompt
+* IPConfig
+* Netsh
+* NBTStat
 
-## 📌 Observações
+## 📌 Notes
 
-Este projeto foi desenvolvido como uma ferramenta simples para auxiliar na manutenção e diagnóstico de conexões de rede no Windows.
+DNS Cleaner is a lightweight utility designed to simplify common Windows network maintenance tasks.
 
-O script não substitui ferramentas profissionais de diagnóstico e não garante a correção de todos os problemas de conectividade.
+It does not guarantee that every network or connectivity problem will be resolved.
 
-## 📄 Licença
-
-Este projeto está disponível para estudo e utilização conforme os termos definidos no repositório.
-
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 **Rc692**
 
-Projeto desenvolvido para facilitar tarefas comuns de manutenção de rede no Windows.
+Developed as a simple tool for Windows network maintenance and troubleshooting.
 
 ---
 
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
+⭐ If you find this project useful, consider giving it a star.
